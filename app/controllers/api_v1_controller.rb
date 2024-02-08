@@ -75,7 +75,7 @@ class ApiV1Controller < Sinatra::Base
     end
 
 
-    post '/finis-ride/:id' do |id|
+    post '/finish-ride/:id' do |id|
       ride = Ride.find_by(id: id)
 
       if ride
